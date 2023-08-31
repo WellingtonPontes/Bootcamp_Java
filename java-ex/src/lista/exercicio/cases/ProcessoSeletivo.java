@@ -14,8 +14,6 @@ public class ProcessoSeletivo {
         // analisandoCandidatos(1900);
         // analisandoCandidatos(2100);
         // analisandoCandidatos(2000);
-
-
         int seleçãoCandidatos = 0;
         int contador= 0;
         while (seleçãoCandidatos < 5) {
@@ -33,17 +31,13 @@ public class ProcessoSeletivo {
                 contador = 0;
                 seleçãoCandidatos++;
             }
-        
-          
         }
-          System.out.println("Lista de candidatos e seus salarios");
-           for (Map.Entry<String, Double> entry : selecionados.entrySet()) {
+        System.out.println("Lista de candidatos e seus salarios");
+            for (Map.Entry<String, Double> entry : selecionados.entrySet()) {
                 // String key = entry.getKey();
                 // Double value = entry.getValue();
                 System.out.printf("Nome: " + entry.getKey() + ", Salario: %.2f%n", entry.getValue());
             }
-
-
     }
 
     
